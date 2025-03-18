@@ -1,0 +1,97 @@
+body {
+    background-image: url("Djungle.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    color: white;
+}
+
+h1, p {
+    color:orangered
+}
+
+.navbar-custom {
+    background-image: url(Leopard.webp);
+    background-size: cover;
+    height: 60px;
+}
+
+.navbar-brand {
+    color: orangered !important;
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+}
+
+
+.navbar-custom .nav-link {
+    color: orangered !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-custom .nav-link:hover {
+    color: yellow !important;
+}
+
+.form-inline {
+    margin-left: 700px;
+}
+
+.form-control {
+    border: 2px solid green;
+}
+
+.btn-outline-success {
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+
+.custom-image {
+    width: 50vh;
+    max-height: 300px;
+    height: auto;
+}
+
+#index-footer {
+    background-image: url(Leopard.webp);
+    background-size: cover;
+    text-align: center;
+    font-size: small;
+    height: 60px;
+
+}
+
+#index-footer a {
+    color:springgreen;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    margin-left: 20px;
+}
+
+#index-footer a:hover {
+    color: yellow;
+
+}
+
+#index-footer p {
+    color:orangered;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

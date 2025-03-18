@@ -1,35 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background-image: url("Djungle.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex: 1;
 }
 
 .content {
     flex: 1;
-    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1, p {
-    color:orangered
+    color: orangered;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar-custom {
     background-image: url(Leopard.webp);
     background-size: cover;
     height: 60px;
+
 }
 
 .navbar-brand {
     color: orangered !important;
     display: flex;
     align-items: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    margin-left: -20px;
 }
 
 .navbar-brand img {
@@ -37,18 +47,28 @@ h1, p {
     height: auto;
 }
 
-
 .navbar-custom .nav-link {
     color: orangered !important;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bolder;
 }
 
 .navbar-custom .nav-link:hover {
     color: yellow !important;
 }
 
+.navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1050;
+    background-color: transparent;
+}
+
 .form-inline {
-    margin-left: 700px;
+    margin: 0 auto;
+    margin-right: 20px;
 }
 
 .form-control {
@@ -62,8 +82,7 @@ h1, p {
 }
 
 .custom-image {
-    width: 50vh;
-    max-height: 300px;
+    width: 80vh;
     height: auto;
 }
 
@@ -72,12 +91,12 @@ h1, p {
     background-size: cover;
     text-align: center;
     font-size: small;
-    height: 60px;
-
+    bottom: 0;
+    width: 100%;
 }
 
 #index-footer a {
-    color:springgreen;
+    color: springgreen;
     text-decoration: none;
     font-weight: bold;
     font-size: small;
@@ -86,12 +105,107 @@ h1, p {
 
 #index-footer a:hover {
     color: yellow;
-
 }
 
 #index-footer p {
     color:orangered;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 1024px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .navbar-custom {
+        padding: 0 1rem;
+    }
+
+    .form-inline {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-control {
+        width: 80%;
+    }
+
+    .btn-outline-success {
+        width: 50%;
+    }
+
+    .custom-image {
+        width: 70%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-custom {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8); 
+        z-index: 1000;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .btn-outline-success {
+        width: 80%;
+    }
+
+    .custom-image {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #index-footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        margin-left: -6rem;
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .custom-image {
+        width: 100%;
+    }
+
+    #index-footer {
+        height: auto;
+        padding: 0.5rem;
+    }
+}
+

@@ -40,6 +40,7 @@ h1, p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     margin-left: -20px;
+    text-shadow: #000000 0 0 5px;
 }
 
 .navbar-brand img {
@@ -49,9 +50,10 @@ h1, p {
 
 .navbar-custom .nav-link {
     color: orangered !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-weight: bolder;
+    text-shadow: #000000 0 0 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar-custom .nav-link:hover {
